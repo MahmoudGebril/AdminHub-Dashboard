@@ -1,6 +1,6 @@
 @use 'mixins' as *;
 
-// ── Badge ─────────────────────────────────────────────────────────────────────
+// Badge
 .badge {
   display: inline-flex;
   align-items: center;
@@ -16,7 +16,7 @@
   &--neutral { background: var(--color-border); color: var(--color-text-muted); }
 }
 
-// ── Form ──────────────────────────────────────────────────────────────────────
+// Form
 .form-group {
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   }
 }
 
-// ── Table utilities ───────────────────────────────────────────────────────────
+// Table
 .table-toolbar {
   @include flex(row, center, space-between, var(--space-4));
   margin-bottom: var(--space-5);
@@ -58,7 +58,7 @@
   }
 }
 
-// ── Empty state ───────────────────────────────────────────────────────────────
+// Empty state
 .empty-state {
   @include flex(column, center, center, var(--space-3));
   padding: var(--space-12) var(--space-6);
@@ -73,7 +73,7 @@
   p { font-size: var(--font-size-base); margin: 0; }
 }
 
-// ── Divider ───────────────────────────────────────────────────────────────────
+// Divider
 .divider {
   height: 1px;
   background: var(--color-border);

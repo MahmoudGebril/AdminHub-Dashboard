@@ -3,7 +3,7 @@
 @use 'styles/layout';
 @use 'styles/components';
 
-// ── Reset & Base ─────────────────────────────────────────────────────────────
+// Base styles
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -35,7 +35,7 @@ input, select, textarea, button {
   font-family: var(--font-family);
 }
 
-// ── Utility classes ───────────────────────────────────────────────────────────
+// Utilities
 .visually-hidden {
   position: absolute;
   width: 1px;

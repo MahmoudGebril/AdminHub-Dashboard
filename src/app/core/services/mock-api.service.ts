@@ -18,7 +18,7 @@ export class MockApiService {
     this.seedIfEmpty();
   }
 
-  // ── Users ────────────────────────────────────────────────────────────────
+  // Users
 
   getUsers(params?: Partial<PaginationParams>): Observable<ApiResponse<User[]>> {
     const all = this.loadUsers();
@@ -69,7 +69,7 @@ export class MockApiService {
     return of(undefined).pipe(delay(LATENCY));
   }
 
-  // ── Products ─────────────────────────────────────────────────────────────
+  // Products
 
   getProducts(params?: Partial<PaginationParams>): Observable<ApiResponse<Product[]>> {
     const all = this.loadProducts();
@@ -117,7 +117,7 @@ export class MockApiService {
     return of(undefined).pipe(delay(LATENCY));
   }
 
-  // ── Dashboard ─────────────────────────────────────────────────────────────
+  // Dashboard
 
   getStats(): Observable<StatCard[]> {
     const users = this.loadUsers();
@@ -161,7 +161,7 @@ export class MockApiService {
     return of(items).pipe(delay(LATENCY));
   }
 
-  // ── Private Helpers ───────────────────────────────────────────────────────
+  // Helpers
 
   private loadUsers(): User[] {
     return this.storage.get<User[]>(USERS_KEY) ?? [];
