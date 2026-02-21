@@ -6,9 +6,11 @@ A fully featured, production-ready Angular 20+ SaaS Admin Dashboard built with e
 
 ## Screenshots
 
-| Login | Dashboard | Users | Dark Mode |
-|-------|-----------|-------|-----------|
-| Clean reactive login with role selector | Stats, SVG chart, activity feed | Full CRUD table with search | Complete dark theme via CSS variables |
+| Login | Dashboard |
+|:-----:|:---------:|
+| ![Login](screenshots/Login.png) | ![Dashboard](screenshots/Dashboard.png) |
+| **Users** | **Dark Mode** |
+| ![Users](screenshots/Users.png) | ![Dark Mode](screenshots/DarkMode.png) |
 
 ---
 
