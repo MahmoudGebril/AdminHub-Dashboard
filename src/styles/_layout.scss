@@ -1,0 +1,74 @@
+@use 'mixins' as *;
+
+.app-shell {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  transition: margin-left var(--transition-slow);
+}
+
+.page-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-6);
+  @include scrollbar;
+
+  @include responsive-md {
+    padding: var(--space-4);
+  }
+}
+
+.page-header {
+  @include flex(row, center, space-between);
+  margin-bottom: var(--space-6);
+
+  h1 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: var(--space-1) 0 0;
+  }
+}
+
+.stats-grid {
+  @include grid(4, var(--space-5));
+  margin-bottom: var(--space-6);
+
+  @include responsive-lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive-sm {
+    grid-template-columns: 1fr;
+  }
+}
+
+.content-grid {
+  @include grid(2, var(--space-5));
+
+  @include responsive-lg {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin: 0 0 var(--space-4);
+}
